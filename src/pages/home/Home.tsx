@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite";
 
 import Header from "pages/home/Header";
 import Tab from "components/tab/Tab";
+import Banner from "components/banner/Banner";
 
 import * as S from "pages/home/Home.styles";
 
@@ -25,6 +26,7 @@ export default observer(function Home() {
           navigationStore.currentTab = selecedTab;
         }}
       />
+      <Banner />
     </S.Container>
   );
 });

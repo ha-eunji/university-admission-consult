@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: fixed;
   width: 100%;
+  min-width: 340px;
   height: 100%;
   top: 0;
   left: 0;
