@@ -1,7 +1,7 @@
 import * as S from "pages/home/Header.styles";
 
 import searchIcon from "assets/icons/search.svg";
-import alamIcon from "assets/icons/account.svg";
+import alamIcon from "assets/icons/bell.svg";
 
 export default function Header() {
   return (
