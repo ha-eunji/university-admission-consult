@@ -5,13 +5,14 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
+  position: relative;
   width: 100%;
 `;
 
 export const Bullet = styled.span`
-  position: relative;
+  position: absolute;
   left: 10px;
-  bottom: 40px;
+  bottom: 15px;
   padding: 3px 10px;
 
   border-radius: 100px;

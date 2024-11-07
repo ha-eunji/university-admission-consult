@@ -1,4 +1,4 @@
-import * as S from "pages/home/Header.styles";
+import * as S from "pages/home/header/Header.styles";
 
 import searchIcon from "assets/icons/search.svg";
 import alamIcon from "assets/icons/bell.svg";

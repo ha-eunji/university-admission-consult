@@ -43,3 +43,10 @@ export const navigationData: navDataType[] = [
     path: "/profile",
   },
 ];
+
+export const navMapper: { [_key: string]: string } = {
+  "/": "홈",
+  "/univ-info": "대학",
+  "/calendar": "일정",
+  "/profile": "나",
+};
