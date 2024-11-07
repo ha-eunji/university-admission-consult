@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
-export const Img = styled.img`
+export const Container = styled.div`
   position: relative;
+`;
+
+export const Img = styled.img`
   width: 100%;
 `;
 
 export const Bullet = styled.span`
-  padding: 0px 10px;
-
-  display: inline-flex;
-  align-items: center;
+  position: relative;
+  left: 10px;
+  bottom: 40px;
+  padding: 3px 10px;
 
   border-radius: 100px;
   background: rgba(0, 0, 0, 0.55);

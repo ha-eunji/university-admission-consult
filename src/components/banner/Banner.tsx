@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
 import "./swiper.min.css";
@@ -10,13 +10,15 @@ import { bannerList } from "components/banner/Banner.data";
 
 export default function Banner() {
   return (
-    <Swiper modules={[Pagination, Autoplay]} autoplay pagination loop>
+    <Swiper modules={[Autoplay]} autoplay loop>
       {bannerList.map((item, i) => (
         <SwiperSlide key={`${item}_${i}`}>
-          <S.Img src={item} alt="img" />
-          <S.Bullet>
-            {i + 1} / {bannerList.length}
-          </S.Bullet>
+          <S.Container>
+            <S.Img src={item} alt="img" />
+            <S.Bullet>
+              {i + 1} / {bannerList.length}
+            </S.Bullet>
+          </S.Container>
         </SwiperSlide>
       ))}
     </Swiper>
