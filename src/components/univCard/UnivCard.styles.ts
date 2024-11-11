@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  &:first-child {
+    margin-left: 16px;
+  }
+
+  &:last-child {
+    margin-right: 16px;
+  }
+`;
 
 export const Thumbnail = styled.div`
   position: relative;

@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  padding: 15px 16px;
+  padding: 15px 0;
 `;
 
 export const ChipBox = styled.div`
   margin-top: 10px;
+  padding: 0 16px;
 
   display: flex;
   justify-content: start;
