@@ -15,6 +15,10 @@ export const MyBox = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+
+  @media screen and (max-width: 400px) {
+    padding: 10px;
+  }
 `;
 
 export const Text = styled.span`
