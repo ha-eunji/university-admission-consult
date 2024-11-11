@@ -4,6 +4,7 @@ import Header from "pages/home/header/Header";
 import Tab from "components/tab/Tab";
 import Banner from "components/banner/Banner";
 import MenuList from "pages/home/menu/MenuList";
+import UnivSection from "pages/home/univSection/UnivSection";
 
 import * as S from "pages/home/Home.styles";
 
@@ -11,6 +12,7 @@ import { navigationStore } from "stores/Navigation.stores";
 
 import { countryTab } from "components/tab/Tab.data";
 import { menuData } from "pages/home/menu/Menu.data";
+import { homeCurationData } from "static/data/Home.data";
 import arrowIcon from "assets/icons/arrow-right.svg";
 
 export default observer(function Home() {
@@ -43,6 +45,12 @@ export default observer(function Home() {
 
       <MenuList menuData={menuData} />
       <S.DivisionLine />
+
+      <S.UnivSection>
+        {homeCurationData.map((curation) => (
+          <UnivSection {...curation} key={curation.curation} />
+        ))}
+      </S.UnivSection>
     </S.Container>
   );
 });

@@ -54,3 +54,7 @@ export const DivisionLine = styled.div`
 
   background: #fafafa;
 `;
+
+export const UnivSection = styled.div`
+  padding-top: 15px;
+`;
